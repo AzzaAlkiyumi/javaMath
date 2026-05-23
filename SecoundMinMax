@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int[] numbers = new int[5];
+
+        // إدخال الأرقام
+        System.out.println("Enter 5 numbers:");
+        for (int i = 0; i < 5; i++) {
+            numbers[i] = input.nextInt();
+        }
+
+        // نبدأ نفترض أول رقم هو الأكبر والأصغر
+        int max = numbers[0];
+        int ssecoundMax = numbers[0];
+
+        // مقارنة باقي العناصر
+        for (int i = 1; i < 5; i++) {
+            if (numbers[i] = max-1) {
+                ssecoundMax = numbers[i];
+            }
+
+            
+        }
+
+        // النتيجة
+        System.out.println("ssecoundMax = " + ssecoundMax);
+        
+
+        input.close();
+    }
+}
